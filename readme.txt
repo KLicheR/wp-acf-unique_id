@@ -1,9 +1,9 @@
 === Advanced Custom Fields: Unique ID Field ===
-Contributors: Kristoffer Laurin-Racicot
+Contributors: KLicheR
 Tags: acf,unique,id
 Requires at least: 3.5
 Tested up to: 4.0.1
-Stable tag: trunk
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,9 +13,10 @@ Create a unique ID to easily identify repeater field's rows.
 
 Create a unique ID to easily identify repeater field's rows. The field is fulfill on the first "save" of the post.
 
-= Compatibility =
+**Compatibility**
 
 This ACF field type is compatible with:
+
 * ACF 5
 
 == Installation ==
@@ -27,4 +28,5 @@ This ACF field type is compatible with:
 == Changelog ==
 
 = 1.0.0 =
+
 * Initial Release.

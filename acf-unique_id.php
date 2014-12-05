@@ -1,11 +1,11 @@
 <?php
 
 /*
-Plugin Name: Advanced Custom Fields: Unique ID
-Plugin URI: https://github.com/KLicheR
+Plugin Name: Advanced Custom Fields: Unique ID Field
+Plugin URI: https://wordpress.org/plugins/acf-unique-id-field
 Description: Create a unique ID to easily identify repeater field's rows.
 Version: 1.0.0
-Author: Kristoffer Laurin-Racicot
+Author: KLicheR
 Author URI: https://github.com/KLicheR
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
