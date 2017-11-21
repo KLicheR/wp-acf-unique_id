@@ -75,6 +75,32 @@ class acf_field_unique_id extends acf_field {
 
 
 	/*
+    *  render_field_settings()
+    *
+    *  Create extra settings for your field. These are visible when editing a field
+    *
+    *  @type	action
+    *  @since	3.6
+    *  @date	23/01/13
+    *
+    *  @param	$field (array) the $field being edited
+    *  @return	n/a
+    */
+
+	function render_field_settings( $field ){
+
+		acf_render_field_setting( $field, array(
+			'label'			=> __('Regenerate on update?'),
+			'instructions'	=> '',
+			'name'			=> 'regenerate_on_update',
+			'type'			=> 'true_false',
+			'ui'			=> 1,
+		), true);
+
+	}
+
+
+	/*
 	*  update_value()
 	*
 	*  This filter is applied to the $value before it is saved in the db
@@ -89,7 +115,8 @@ class acf_field_unique_id extends acf_field {
 	*  @return	$value
 	*/
 	function update_value( $value, $post_id, $field ) {
-		if (!$value) {
+
+		if (!$value || $field['regenerate_on_update'] === 1 ) {
 			$value = uniqid();
 		}
 		return $value;
